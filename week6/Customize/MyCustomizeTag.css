@@ -1,0 +1,35 @@
+/* General styles */
+body {
+    font: 20px "Comic Sans MS";
+}
+
+/* Custom tag styles */
+MyCustomizeTag {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    width: 500px;
+}
+
+/* General div styles */
+div {
+    background-color: yellow;
+    margin: 0px 0px 5px 5px;
+    width: 300px;
+}
+
+/* GroupFormat class styles */
+.GroupFormat {
+    font-weight: bold;
+    color: #f00;
+    width: 400px;
+}
+
+/* TheHighest Priority ID styles */
+#TheHighestPriority {
+    background-color: #000;
+    font-style: italic;
+    font: italic 30px "Times New Roman";
+    color: #fff;
+}

@@ -1,0 +1,42 @@
+.ProductDetails {
+    display: none;
+}
+
+.Product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.ProductName {
+    font-weight: bold;
+}
+
+.ProductPrice {
+    font-style: italic;
+}
+
+.ProductPrice:after {
+    content: "$";
+}
+
+.Product {
+    text-align: center;
+    width: 150px;
+    margin: 8px 20px;
+    float: left; /* Ensures products align horizontally */
+    cursor: pointer;
+}
+
+.Product:hover .ProductDetails {
+    display: block;
+}
+
+/* Add this rule to ensure the container is wide enough for all products */
+body > div {
+    width: 100%; /* Adjust to fit all products */
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-around; /* Space out products evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to the next row */
+}

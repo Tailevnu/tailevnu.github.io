@@ -1,0 +1,24 @@
+div #second
+{ 
+    color: red;
+    font-size:20px;
+}
+li
+{
+    text-decoration: underline;
+}
+.special
+{
+    color:red;
+text-decoration: underline;
+}
+span 
+{
+    background: DodgerBlue;
+    color: #ffffff;
+}
+div p.special 
+{
+    color: green;
+    text-decoration: underline;
+}

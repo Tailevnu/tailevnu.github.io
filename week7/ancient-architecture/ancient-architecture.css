@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Roboto, sans-serif;
+    background: #e2d7aa;
+    color: #000;
+    font-size: 16px;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+img { width: 1170px; height: 500px; }
+.image-container { width: 1600px; height: 450px; margin-top: 65px; }
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 65px;
+    font-family: 'Indie Flower', cursive;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;     
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none; /* Adds underline to navigation links */
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+nav ul li a:hover { color: #0a2d4a; font-weight: bold; }
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 30%;
+    background: #f5f5dc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+article img { width: 100%; height: auto; border-radius: 5px; }
+article h2 { font-size: 22px; font-weight: bold; margin-top: 10px; }
+article h3 { font-size: 16px; color: #555; }
+
+p:first-letter { font-size: 32px; font-weight: bold; color: #333; }
+
+span a {
+    display: inline-block;
+    background: #8b4513;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 10px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+span a:hover { background: #a0522d; }
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.comments {
+    display: inline-flex; /* Aligns the text and image horizontally */
+    align-items: center; /* Vertically centers the text with the image */
+    gap: 5px; /* Adds spacing between the image and the text */
+}
+
+/* Add the comment.png image as a background */
+.comments::before {
+    content: ""; /* Required for the pseudo-element */
+    display: inline-block;
+    width: 16px; /* Adjust width to match the image size */
+    height: 16px; /* Adjust height to match the image size */
+    background: url('images/comment.png') no-repeat center center;
+    background-size: contain; /* Ensures the image fits within the dimensions */
+}
+/* General Navigation Styling */
+
+/* Styling for "Home" */
+nav ul li:nth-of-type(1) a {
+    color: red; /* Blue color for "Home" */
+    font-weight: bold; /* Bold text for "Home" */
+}
+
+/* Styling for "Contact" */
+nav ul li:last-of-type a {
+    color: red; /* Blue color for "Contact" */
+    font-weight: bold; /* Bold text for "Contact" */
+}
+
+/* Remove underline for "Someone," "0 comments," and "View post" */
+.comments a,
+.readmore a,
+h3 a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the default text color */
+}
+
+/* Optional: Add hover effect for these links */
+.comments a:hover,
+.readmore a:hover,
+h3 a:hover {
+    text-decoration: none; /* No underline on hover */
+    color: #555; /* Optional hover color */
+}
+h3 a {
+    color: blue; /* Blue color for "Someone" */
+}
