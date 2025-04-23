@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Calculator</title>
+  <script>
+    function calculateCircle() {
+      const radius = parseFloat(document.getElementById("radius").value);
+      if (radius > 0) {
+        const pi = Math.PI;
+        document.getElementById("circleResult").innerHTML = 
+          `Perimeter: ${(2 * pi * radius).toFixed(2)}<br>Area: ${(pi * radius ** 2).toFixed(2)}`;
+      } else {
+        alert("Enter a positive radius.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Circle Calculator</h2>
+  <label>Radius: <input type="number" id="radius"></label>
+  <button onclick="calculateCircle()">Calculate</button>
+  <p id="circleResult"></p>
+</body>
+</html>
