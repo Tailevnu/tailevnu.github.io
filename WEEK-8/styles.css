@@ -1,26 +1,72 @@
+<span class="badge bg-secondary float-end">609 W Gravers Ln</span>
+                                <ul class="list-inline mt-2">
+                                    <li class="list-inline-item">4,820 SqFt</li>
+                                    <li class="list-inline-item">|</li>
+                                    <li class="list-inline-item">5 Baths</li>
+                                </ul>
+                                <p class="card-text">Content of media heading</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-6">
+                <div class="house card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/02.jpg" class="img-fluid rounded-start" alt="House 2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Media Heading</h5>
+                                <a href="#" class="card-link">$1,975,000</a>
+                                <span class="badge bg-secondary float-end">609 W Gravers Ln</span>
+                                <ul class="list-inline mt-2">
+                                    <li class="list-inline-item">4,820 SqFt</li>
+                                    <li class="list-inline-item">|</li>
+                                    <li class="list-inline-item">5 Baths</li>
+                                </ul>
+                                <p class="card-text">Content of media heading</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 body {
     background-color: #e8e8e8;
 }
+
 .container {
     margin-top: 30px;
 }
+
 .house {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     float: left;
 }
+
 .media-body {
     margin-top: 10px;
 }
+
 .media-body span {
     margin-top: 10px;
 }
+
 @media screen and (min-width: 990px) {
     .house img {
         max-width: 180px;
     }
 }
+
 @media screen and (max-width: 990px) {
     .house p,
     .house .media-body a {
